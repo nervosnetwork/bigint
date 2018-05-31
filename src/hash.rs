@@ -60,6 +60,7 @@ macro_rules! impl_uint_conversions {
 }
 
 impl_serde!(H32, 4);
+impl_serde!(H48, 6);
 impl_serde!(H64, 8);
 impl_serde!(H128, 16);
 impl_serde!(H160, 20);
@@ -71,6 +72,7 @@ impl_serde!(H520, 65);
 impl_serde!(H1024, 128);
 
 construct_hash!(H32, 4);
+construct_hash!(H48, 6);
 construct_hash!(H64, 8);
 construct_hash!(H128, 16);
 construct_hash!(H160, 20);
