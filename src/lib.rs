@@ -1,4 +1,3 @@
-#![feature(custom_attribute)]
 #![cfg_attr(not(feature = "std"), no_std)]
 #![cfg_attr(asm_available, feature(asm))]
 #![allow(unused_attributes)]
@@ -17,10 +16,8 @@ extern crate ethereum_types_serialize;
 #[cfg(feature = "serialize")]
 extern crate serde;
 
-#[rustfmt_skip]
 #[cfg_attr(feature = "cargo-clippy", allow(clippy))]
 mod hash;
-#[rustfmt_skip]
 #[cfg_attr(feature = "cargo-clippy", allow(clippy))]
 mod uint;
 
